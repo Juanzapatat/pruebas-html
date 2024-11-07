@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Finanzas</title>
+    <link rel="stylesheet" href="RG.css">
+</head>
+<body>
+    <!-- Barra de navegación con título y botones -->
+    <nav class="navbar">
+        <h1>Área Reporte de Finanzas</h1>
+        <div class="navbar-buttons">
+            <button class="regresar-btn" onclick="window.location.href='interfaz.html'">Regresar</button>
+            <button class="revisar-reporte-btn" onclick="window.location.href='RR.html'">Revisar Reporte</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Contenedor de bienvenida -->
+        <div class="bienvenida">
+            <h2>Bienvenido a nuestra área de Reporte de Finanzas</h2>
+            <p>Por favor diligencie el siguiente formulario para así llevar con efectividad su Reporte de Finanzas.
+                Si el reporte es sobre uno ya realizado, solo debe incluir la fecha de expedición. No es necesario llenar el campo "fecha de vencimiento".</p>
+        </div>
+
+        <!-- Formulario de Reporte de Finanzas -->
+        <form class="formulario">
+            <label for="nombre">Nombre del Reporte:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="fecha expedicion">Fecha de Expedición:</label>
+            <input type="date" id="fecha expedicion" name="fecha expedicion">
+
+            <label for="fecha vencimiento">Fecha de Vencimiento:</label>
+            <input type="date" id="fecha vencimiento" name="fecha vencimiento">
+
+            <label for="monto">Monto del Reporte:</label>
+            <input type="text" id="monto" name="monto">
+
+            <label for="categoria">Categoría:</label>
+            <input type="text" id="categoria" name="categoria">
+
+            <button type="submit">Generar Reporte</button>
+        </form>
+    </div>
+</body>
+</html>

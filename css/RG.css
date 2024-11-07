@@ -1,0 +1,261 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #0a0908, #ba5e00);
+    color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.navbar h1 {
+    font-size: 24px;
+    color: #ba5e00;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navbar-buttons {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-buttons button {
+    background-color: #ba5e00;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.navbar-buttons button:hover {
+    background-color: #0a0908;
+    color: #ba5e00;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.bienvenida {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.bienvenida h2 {
+    font-size: 24px;
+    color: #ba5e00;
+    font-weight: bold;
+}
+
+.bienvenida p {
+    font-size: 16px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 450px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(28, 28, 28, 0.9);
+    border-radius: 8px;
+    margin: 20px auto;
+    align-items: center;
+}
+
+label {
+    font-size: 16px;
+    color: #ba5e00;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    max-width: 250px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    border-color: #ba5e00;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #ba5e00;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0a0908;
+}
+
+.revisar-reporte-btn {
+    background-color: #ba5e00;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.revisar-reporte-btn:hover {
+    background-color: #0a0908;
+    color: #ba5e00;
+}
+
+.regresar-btn {
+    background-color: #ba5e00;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.regresar-btn:hover {
+    background-color: #0a0908;
+    color: #ba5e00;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    .navbar-buttons button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .bienvenida h2 {
+        font-size: 20px;
+    }
+
+    .formulario {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"] {
+        max-width: 200px;
+        font-size: 12px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .revisar-reporte-btn,
+    .regresar-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 18px;
+    }
+
+    .navbar-buttons button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .bienvenida h2 {
+        font-size: 18px;
+    }
+
+    .formulario {
+        padding: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"] {
+        max-width: 180px;
+        font-size: 12px;
+    }
+
+    button[type="submit"] {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .revisar-reporte-btn,
+    .regresar-btn {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}

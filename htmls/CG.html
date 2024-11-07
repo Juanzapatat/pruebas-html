@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Gastos</title>
+    <link rel="stylesheet" href="CG.css">
+</head>
+
+<body>
+    <!-- Barra de navegación fija -->
+    <div class="navbar">
+        <a href="interfaz.html" class="cs">REGRESAR</a>
+        <a href="gastos.html" class="cs">Revisar Gastos</a> <!-- Nuevo botón Revisar Gastos -->
+    </div>
+
+    <!-- Contenedor de bienvenida -->
+    <div class="welcome-container">
+        <div class="container">
+            <h1>Bienvenido al área de Control de Gastos</h1>
+            <h2>Por favor diligencie el formulario con los datos solicitados</h2>
+        </div>
+    </div>
+
+    <!-- Formulario de control de gastos -->
+    <div class="form">
+        <form action="" method="post">
+            <div class="gasto">
+                <label for="Nombre Gasto">Nombre Gasto</label>
+                <input type="text" name="nombre-gasto" id="nombre-gasto">
+            </div>
+            <div class="fecha">
+                <label for="Fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha">
+            </div>
+            <div class="monto">
+                <label for="Monto">Monto</label>
+                <input type="number" name="dinero" id="dinero">
+            </div>
+            <div class="receptor">
+                <label for="Dirigido">Receptor</label>
+                <input type="text" name="receptor" id="receptor">
+            </div>
+            <div class="categoria">
+                <label for="Categoria">Categoría</label>
+                <select name="Categoria" id="categoria">
+                    <option value="textil">Textiles</option>
+                    <option value="Compra Activos">Compra Activos</option>
+                    <option value="Inversion Banco">Inversión Banco</option>
+                    <option value="Uso Personal">Uso Personal</option>
+                </select>
+            </div>
+            <div class="gaurdar">
+                <label for="Guardar" id="guardar"></label>
+                <input type="submit" value="Guardar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
